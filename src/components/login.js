@@ -14,8 +14,6 @@ function Login() {
         e.preventDefault();
         try{
             await signInWithEmailAndPassword(auth,email,password);
-            setEmail("");
-            setPassword("");
             console.log('User Logged in Successfully');
             window.location.href = "/profile"
             toast.success('User Logged Successfully')
@@ -43,7 +41,7 @@ function Login() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg outline-none hover:shadow-indigo-500/40 hover:shadow"
             required
           />
         </div>
@@ -53,7 +51,7 @@ function Login() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg outline-none hover:shadow-indigo-500/40 hover:shadow"
             required
           />
         </div>
@@ -66,7 +64,7 @@ function Login() {
        <div className='flex items-center justify-end'>
         <span className='mr-2'>New User</span>
         <button onClick={regClick}
-          className=" px-4 py-1  font-medium text-white bg-orange-500 rounded-sm hover:bg-orange-600 focus:outline-none focus:ring focus:ring-blue-500"
+          className=" px-2 py-1  text-white bg-orange-500 rounded-sm hover:bg-orange-600 focus:outline-none focus:ring focus:ring-blue-500"
         >
           Register !
         </button>

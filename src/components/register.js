@@ -29,6 +29,7 @@ function Register() {
             if (user) {
                 await setDoc(doc(db, "Users", user.uid), {
                     email: user.email,
+                    password:password,
                     firstname: fname,
                     lastname: lname,
                 })
@@ -59,7 +60,7 @@ function Register() {
                             type="text"
                             placeholder='First name'
                             onChange={(e) => setFname(e.target.value)}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg outline-none hover:shadow-indigo-500/40 hover:shadow"
                             required
                         />
                     </div>
@@ -69,7 +70,7 @@ function Register() {
                             type="text"
                             placeholder='Last name'
                             onChange={(e) => setLname(e.target.value)}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg outline-none hover:shadow-indigo-500/40 hover:shadow"
                             required
                         />
                     </div>
@@ -79,7 +80,7 @@ function Register() {
                             type="email"
                             placeholder='Email'
                             onChange={(e) => setEmail(e.target.value)}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg outline-none hover:shadow-indigo-500/40 hover:shadow"
                             required
                         />
                     </div>
@@ -89,20 +90,20 @@ function Register() {
                             type="password"
                             placeholder='Password'
                             onChange={(e) => setPassword(e.target.value)}
-                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+                            className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg outline-none hover:shadow-indigo-500/40 hover:shadow"
                             required
                         />
                     </div>
                     <button
                         type="submit"
-                        className="w-full px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-500"
+                        className="w-full px-4 py-2 text-sm font-medium text-white rounded bg-green-500 hover:bg-green-600"
                     >
                         Register
                     </button>
                     <div className='flex items-center justify-end'>
                         <span className='mr-2'>Already Registered?</span>
                         <button onClick={logClick}
-                            className=" px-4 py-1  font-medium text-white bg-orange-500 rounded-sm hover:bg-orange-600 focus:outline-none focus:ring focus:ring-blue-500"
+                            className=" px-4 py-1  font-medium text-white bg-indigo-600 rounded-sm hover:bg-indigo-700 "
                         >
                             Login
                         </button>
