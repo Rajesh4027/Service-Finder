@@ -2,9 +2,13 @@
 import './App.css';
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 
-import Login from './components/login';
-import SignUp from './components/register';
-import Profile from './components/profile';
+
+import Login from './auth/login.js'
+import SignUp from './auth/register.js'
+import Profile from './auth/profile.js'
+import UserPage from './components/UserPage.js'
+
+
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -19,6 +23,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<SignUp />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/UserPage" element={<UserPage />} />
         </Routes>
         <ToastContainer />
       </div>

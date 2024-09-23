@@ -2,5 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    font-family: 'Poppins',sans-serif;
+  }
+  
+  header ul li{
+    @apply px-5;
+  }
 
+.mobile-nav{
+    @apply fixed top-14  right-0 bg-white  w-full h-full ;
+  }
+  .mobile-nav li {
+    @apply w-full text-center hover:bg-blue-700  hover:text-white bg-slate-300  h-full content-center;
+  }
+  .mobile-nav li a {
+    @apply px-56 py-7 
+  }
 
+  .nav-style{
+    @apply  rounded-sm hover:bg-violet-900 hover:text-white px-3 duration-300 py-2
+  }
+  .bg-nav{
+    @apply bg-white drop-shadow-lg;
+  }
