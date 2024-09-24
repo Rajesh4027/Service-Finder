@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+
+
+
 *{
     font-family: 'Poppins',sans-serif;
   }
@@ -11,13 +27,14 @@
   }
 
 .mobile-nav{
-    @apply fixed top-14  right-0 bg-white  w-full h-full ;
+    @apply fixed top-14  right-0 bg-white  w-1/4 h-full  content-end;
   }
   .mobile-nav li {
-    @apply w-full text-center hover:bg-blue-700  hover:text-white bg-slate-300  h-full content-center;
+    @apply w-full text-center hover:bg-blue-700  hover:text-white bg-slate-300  h-full  ;
   }
-  .mobile-nav li a {
-    @apply px-56 py-7 
+  
+  .mobile-nav div{
+    @apply content-center
   }
 
   .nav-style{
