@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 export default function Loading() {
     const [filled,setFilled] = useState(0);
     useEffect(()=>{
-        setTimeout(()=> setFilled(prev => prev +=2),50)
+        setTimeout(()=> setFilled(prev => prev +=2),10)
     })
   return (
     <div className='flex flex-col justify-center items-center h-screen bg-gray-100 p-4'>

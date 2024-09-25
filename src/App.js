@@ -23,13 +23,13 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3100);
+    }, 1200);
 
     return () => clearTimeout(timer);
   }, []);
   return (
     <Router>
-      <div className="App">
+      <div className="App overflow-x-hidden ">
         <Routes>
         {isLoading ? (
           <Route path="/" element={<Loading />} />
