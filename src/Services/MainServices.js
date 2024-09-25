@@ -1,6 +1,8 @@
 import React from 'react'
 import InfiniteScrollGrid from '../navbar/InfiniteScrollGrid';
 
+
+
 const MainServices = () => {
    
     return (
@@ -13,37 +15,37 @@ const MainServices = () => {
 
                     <h2 className="row-span-2 p-4 text-2xl  ml-4">What are you looking for?</h2>
                     <div className=' p-4 rounded-md h-full grid grid-cols-2  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3 text-center'>
-                        <div className='border rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
-                            <img width={80} className=' mx-auto' src="https://cdn.iconscout.com/icon/free/png-512/free-air-conditioner-icon-download-in-svg-png-gif-file-formats--conditioning-heating-electronics-technology-hotel-service-pack-holidays-icons-8031769.png?f=webp&w=256" alt="" />
-                            <p>Ac Repair</p>
+                        <div className='border p-2 text-indigo-600 hover:text-white rounded-lg bg-indigo-200 hover:bg-indigo-400  transition duration-300 ease-in-out hover:scale-105'>
+                            <img width={60} className=' mx-auto mt-2' src='./Icons/haircut.png' alt="" />
+                            <p className='text-sm  '>Men Salon & Massage</p>
                         </div>
-                        <div className='border rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
-                            <img width={80} className=' mx-auto' src="https://cdn.iconscout.com/icon/free/png-512/free-air-conditioner-icon-download-in-svg-png-gif-file-formats--conditioning-heating-electronics-technology-hotel-service-pack-holidays-icons-8031769.png?f=webp&w=256" alt="" />
-                            <p>Ac Repair</p>
+                        <div className='border p-2 text-indigo-600 hover:text-white rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
+                            <img width={60} className=' mx-auto mt-2' src="./Icons/facial-treatment.png" alt="" />
+                            <p className='text-sm   '>Woman Salon's & Spa</p>
                         </div>
-                        <div className='border rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
-                            <img width={80} className=' mx-auto' src="https://cdn.iconscout.com/icon/free/png-512/free-air-conditioner-icon-download-in-svg-png-gif-file-formats--conditioning-heating-electronics-technology-hotel-service-pack-holidays-icons-8031769.png?f=webp&w=256" alt="" />
-                            <p>Ac Repair</p>
+                        <div className='border p-2 text-indigo-600 hover:text-white rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
+                            <img width={70} className=' mx-auto' src="./Icons/home-repair.png" alt="" />
+                            <p className='text-sm  '>Wall Pannels</p>
                         </div>
-                        <div className='border rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
-                            <img width={80} className=' mx-auto' src="https://cdn.iconscout.com/icon/free/png-512/free-air-conditioner-icon-download-in-svg-png-gif-file-formats--conditioning-heating-electronics-technology-hotel-service-pack-holidays-icons-8031769.png?f=webp&w=256" alt="" />
-                            <p>Ac Repair</p>
+                        <div className='border p-2 text-indigo-600 hover:text-white rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
+                            <img width={60} className=' mx-auto' src="./Icons/household.png" alt="" />
+                            <p className='text-sm  '>Cleaning & Pest Control</p>
                         </div>
-                        <div className='border rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
-                            <img width={80} className=' mx-auto' src="https://cdn.iconscout.com/icon/free/png-512/free-air-conditioner-icon-download-in-svg-png-gif-file-formats--conditioning-heating-electronics-technology-hotel-service-pack-holidays-icons-8031769.png?f=webp&w=256" alt="" />
-                            <p>Ac Repair</p>
+                        <div className='border p-2 text-indigo-600 hover:text-white rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
+                            <img width={60} className=' mx-auto' src="./Icons/water-filter.png" alt="" />
+                            <p className='text-sm  '>Water Purifier</p>
                         </div>
-                        <div className='border rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
-                            <img width={80} className=' mx-auto' src="https://cdn.iconscout.com/icon/free/png-512/free-air-conditioner-icon-download-in-svg-png-gif-file-formats--conditioning-heating-electronics-technology-hotel-service-pack-holidays-icons-8031769.png?f=webp&w=256" alt="" />
-                            <p>Ac Repair</p>
+                        <div className='border p-2 text-indigo-600 hover:text-white rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105'>
+                            <img width={60} className=' mx-auto mt-2' src="./Icons/air-conditioner.png" alt="" />
+                            <p className='text-sm  '>Ac Repair</p>
                         </div>
-                        <div className='border rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105 md:col-span-1 lg:col-span-2'>
-                            <img width={80} className=' mx-auto' src="https://cdn.iconscout.com/icon/free/png-512/free-air-conditioner-icon-download-in-svg-png-gif-file-formats--conditioning-heating-electronics-technology-hotel-service-pack-holidays-icons-8031769.png?f=webp&w=256" alt="" />
-                            <p>Ac Repair</p>
+                        <div className='border p-2 text-indigo-600 hover:text-white rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105 md:col-span-1 lg:col-span-2'>
+                            <img width={60} className=' mx-auto' src="./Icons/paint-roller.png" alt="" />
+                            <p className='text-sm  '>Painting & Decoration</p>
                         </div>
-                        <div className='border rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105 lg:col-span-2 xl:col-span-1'>
-                            <img width={80} className=' mx-auto' src="https://cdn.iconscout.com/icon/free/png-512/free-air-conditioner-icon-download-in-svg-png-gif-file-formats--conditioning-heating-electronics-technology-hotel-service-pack-holidays-icons-8031769.png?f=webp&w=256" alt="" />
-                            <p>Ac Repair</p>
+                        <div className='border p-2 text-indigo-600 hover:text-white rounded-lg bg-indigo-200 hover:bg-indigo-400 transition duration-300 ease-in-out hover:scale-105 lg:col-span-2 xl:col-span-1'>
+                            <img width={60} className=' mx-auto' src="./Icons/electrician.png" alt="" />
+                            <p className='text-sm  '>Electrician</p>
                         </div>
                     </div>
 
