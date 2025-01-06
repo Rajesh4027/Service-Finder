@@ -1,20 +1,25 @@
 import React from 'react'
 import InfiniteScrollGrid from '../navbar/InfiniteScrollGrid';
-
+import { useNavigate } from "react-router-dom";
 
 
 const MainServices = () => {
-   
+    const navigate = useNavigate();
+    
+   function showHead(){
+    navigate('/mapapi')
+   }
+
     return (
 
         <div className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
 
                 <div className="grid grid-rows-2 gap-4 bg-white p-6 rounded-lg ">
-                    <h2 className=" text-2xl font-bold ml-4">Home services at your doorstep</h2>
+                    <h2 className=" text-3xl font-bold ml-4">Home services at your doorstep</h2>
 
                     <h2 className="row-span-2 p-4 text-2xl  ml-4">What are you looking for?</h2>
-                    <div className=' p-4 rounded-md h-full grid grid-cols-2  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3 text-center'>
+                    <div onClick={showHead} className=' p-4 rounded-md h-full grid grid-cols-2  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3 text-center'>
                         <div className='border p-2 text-indigo-600 hover:text-white rounded-lg bg-indigo-200 hover:bg-indigo-400  transition duration-300 ease-in-out hover:scale-105'>
                             <img width={60} className=' mx-auto mt-2' src='./Icons/haircut.png' alt="" />
                             <p className='text-sm  '>Men Salon & Massage</p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const services = [
   {
@@ -24,6 +24,7 @@ const services = [
 ];
 
 const Cleaning = () => {
+
   return (
     <div className="container mx-auto p-6 ">
       <div className="flex justify-between items-center">
@@ -33,7 +34,7 @@ const Cleaning = () => {
         </a>
       </div>
       
-      <div className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-end ">
+      <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2   md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-end ">
         {services.map((service, index) => (
           <div key={index} className="rounded-lg hover:shadow p-4 transition duration-300 ease-in-out hover:scale-105">
             <img
@@ -45,6 +46,7 @@ const Cleaning = () => {
           </div>
         ))}
       </div>
+
     </div>
   );
 };

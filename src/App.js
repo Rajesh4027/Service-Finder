@@ -13,6 +13,8 @@ import FrontUI from './components/FrontUI.js';
 import Loading from './components/Loading.js';
 import MainServices from './Services/MainServices.js';
 
+import Mapapi from './Google Map/Mapapi.js';
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -46,6 +48,7 @@ function App() {
           <Route path="/UserPage" element={<UserPage />} />
           <Route path="/FrontUI" element={<FrontUI />} />
           <Route path="/MainServices" element={<MainServices />} />
+          <Route path="/mapapi" element={<Mapapi />} />
         </Routes>
         <ToastContainer />
       </div>

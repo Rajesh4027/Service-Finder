@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+
 const serviceData = [
   {
     title: "Washing Machine Repair",
@@ -54,7 +55,7 @@ const Acappliance = () => {
 
   return (
     <div className="container mx-auto my-10">
-      <h2 className="text-2xl font-bold text-center mb-6">AC & appliance repair</h2>
+      <h2 className="text-3xl ml-4 font-bold text-start mb-6">AC & appliance repair</h2>
       <Slider {...settings}>
         {serviceData.map((service, index) => (
           <div key={index} className="p-4">
